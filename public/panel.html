@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Témy Panel - Yogapit</title>
+  <style>
+    /* CSS Variables */
+    :root {
+      --rail-width: 360px;
+      --radius: 24px;
+      --c-accent: #6B36E9;
+      --c-gradient-top: #FF3B3B;
+      --c-gradient-bottom: #000000;
+      --c-purple-start: #4328A4;
+      --c-purple-end: #6B36E9;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background: #000;
+      color: #fff;
+      padding: 20px;
+    }
+
+    /* Panel Container */
+    .topic-panel {
+      position: relative;
+      width: min(var(--rail-width), 90vw);
+      max-width: 400px;
+      min-width: 320px;
+      margin: 0 auto;
+    }
+
+    /* Main Card */
+    .topic-card {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 3 / 4;
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s ease;
+    }
+
+    .topic-card:hover {
+      transform: translateY(-4px);
+    }
+
+    /* Card Background Image */
+    .card-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* Gradient Overlay */
+    .card-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(180deg, var(--c-gradient-top) 0%, transparent 40%, var(--c-gradient-bottom) 100%);
+    }
+
+    /* Content Container */
+    .card-content {
+      position: relative;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      padding: 24px;
+      z-index: 1;
+    }
+
+    /* Top Banner */
+    .card-banner {
+      font-size: 48px;
+      font-weight: 900;
+      letter-spacing: 2px;
+      color: #fff;
+      text-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+      margin-bottom: auto;
+    }
+
+    /* Bottom Area */
+    .card-bottom {
+      margin-top: auto;
+    }
+
+    .card-category {
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      opacity: 0.9;
+      margin-bottom: 16px;
+    }
+
+    /* CTA Button */
+    .card-cta {
+      display: inline-block;
+      padding: 12px 28px;
+      background: transparent;
+      border: 2px solid #fff;
+      color: #fff;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 14px;
+      letter-spacing: 1px;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card-cta:hover,
+    .card-cta:focus-visible {
+      background: #fff;
+      color: #000;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(255, 255, 255, 0.3);
+    }
+
+    .card-cta:focus-visible {
+      outline: 3px solid var(--c-accent);
+      outline-offset: 3px;
+    }
+
+    /* Next Topic Block */
+    .next-block {
+      margin-top: 16px;
+      height: 96px;
+      background: linear-gradient(135deg, var(--c-purple-start) 0%, var(--c-purple-end) 100%);
+      border-radius: var(--radius);
+      padding: 20px 24px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .next-block::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, transparent 100%);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .next-block:hover::before,
+    .next-block:focus-visible::before {
+      opacity: 1;
+    }
+
+    .next-block:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 30px rgba(107, 54, 233, 0.4);
+    }
+
+    .next-label {
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      opacity: 0.8;
+      margin-bottom: 8px;
+    }
+
+    .next-title {
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+
+    /* Vertical Label */
+    .vertical-label {
+      position: absolute;
+      left: -12px;
+      top: 50%;
+      transform: translateY(-50%) rotate(180deg);
+      writing-mode: vertical-rl;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      opacity: 0.5;
+      white-space: nowrap;
+      pointer-events: none;
+    }
+
+    /* Navigation Arrows */
+    .nav-arrows {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: -60px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .nav-arrow {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .nav-arrow:hover {
+      background: rgba(255, 255, 255, 0.2);
+      transform: scale(1.1);
+    }
+
+    .nav-arrow:focus-visible {
+      outline: 3px solid var(--c-accent);
+      outline-offset: 3px;
+    }
+
+    .nav-arrow svg {
+      width: 20px;
+      height: 20px;
+      fill: #fff;
+    }
+
+    /* Mobile Styles */
+    @media (max-width: 768px) {
+      .topic-panel {
+        width: 100%;
+        max-width: none;
+      }
+
+      .topic-card {
+        aspect-ratio: 4 / 3;
+        height: 340px;
+      }
+
+      .nav-arrows {
+        right: auto;
+        bottom: -70px;
+        top: auto;
+        transform: none;
+        flex-direction: row;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      .vertical-label {
+        display: none;
+      }
+    }
+
+    /* Reduced Motion */
+    @media (prefers-reduced-motion: reduce) {
+      .topic-card,
+      .card-cta,
+      .next-block,
+      .nav-arrow {
+        transition: none;
+      }
+
+      .topic-card:hover {
+        transform: none;
+      }
+    }
+
+    /* Focus Styles */
+    *:focus-visible {
+      outline: 3px solid var(--c-accent);
+      outline-offset: 3px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Topic Panel -->
+  <aside class="topic-panel" role="region" aria-label="Témy carousel" aria-roledescription="carousel">
+
+    <!-- Vertical Label -->
+    <div class="vertical-label" aria-hidden="true">
+      SPOZNAJTE HLBŠIE JEDNOTLIVÉ TÉMY
+    </div>
+
+    <!-- Main Card -->
+    <article class="topic-card" id="current-topic">
+      <!-- Background Image -->
+      <img
+        src="/assets/zombie.png"
+        alt="ZOMBIE téma ilustrácia"
+        class="card-image"
+        loading="lazy"
+        onerror="this.style.display='none'"
+      >
+
+      <!-- Gradient Overlay -->
+      <div class="card-overlay"></div>
+
+      <!-- Content -->
+      <div class="card-content">
+        <!-- Top Banner -->
+        <h2 class="card-banner" id="topic-title">ZOMBIE</h2>
+
+        <!-- Bottom Area -->
+        <div class="card-bottom">
+          <div class="card-category" id="topic-category">Sekta</div>
+          <a
+            href="/tema/zombie"
+            class="card-cta"
+            aria-label="Spoznať viac o téme ZOMBIE"
+          >
+            SPOZNAŤ VIAC
+          </a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Next Topic Block -->
+    <div
+      class="next-block"
+      tabindex="0"
+      role="button"
+      aria-label="Ďalšia téma: Nevyspovedné prekážky"
+      id="next-block"
+    >
+      <div class="next-label">Ďalšia téma</div>
+      <div class="next-title" id="next-title">Nevyspovedné prekážky</div>
+    </div>
+
+    <!-- Navigation Arrows -->
+    <div class="nav-arrows">
+      <button
+        class="nav-arrow"
+        aria-label="Predošlá téma"
+        id="btn-prev"
+      >
+        <svg viewBox="0 0 24 24">
+          <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+        </svg>
+      </button>
+      <button
+        class="nav-arrow"
+        aria-label="Ďalšia téma"
+        id="btn-next"
+      >
+        <svg viewBox="0 0 24 24">
+          <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
+        </svg>
+      </button>
+    </div>
+  </aside>
+
+  <script>
+    // Topic Data
+    const topics = [
+      {
+        id: 'zombie',
+        title: 'ZOMBIE',
+        category: 'Sekta',
+        image: '/assets/zombie.png',
+        url: '/tema/zombie',
+        nextTitle: 'Nevyspovedné prekážky'
+      },
+      {
+        id: 'prekazky',
+        title: 'Nevyspovedné prekážky',
+        category: 'Filozofia',
+        image: '/assets/prekazky.png',
+        url: '/tema/prekazky',
+        nextTitle: 'Karma'
+      },
+      {
+        id: 'karma',
+        title: 'Karma',
+        category: 'Védske štúdiá',
+        image: '/assets/karma.png',
+        url: '/tema/karma',
+        nextTitle: 'Japa'
+      },
+      {
+        id: 'japa',
+        title: 'Japa',
+        category: 'Praxe',
+        image: '/assets/japa.png',
+        url: '/tema/japa',
+        nextTitle: 'ZOMBIE'
+      }
+    ];
+
+    // State
+    let currentIndex = 0;
+
+    // DOM Elements
+    const topicTitle = document.getElementById('topic-title');
+    const topicCategory = document.getElementById('topic-category');
+    const nextTitle = document.getElementById('next-title');
+    const cardImage = document.querySelector('.card-image');
+    const cardCta = document.querySelector('.card-cta');
+    const nextBlock = document.getElementById('next-block');
+    const btnPrev = document.getElementById('btn-prev');
+    const btnNext = document.getElementById('btn-next');
+
+    // Render current topic
+    function render() {
+      const topic = topics[currentIndex];
+      const nextIndex = (currentIndex + 1) % topics.length;
+      const nextTopic = topics[nextIndex];
+
+      // Update main card
+      topicTitle.textContent = topic.title;
+      topicCategory.textContent = topic.category;
+      cardImage.src = topic.image;
+      cardImage.alt = `${topic.title} téma ilustrácia`;
+      cardCta.href = topic.url;
+      cardCta.setAttribute('aria-label', `Spoznať viac o téme ${topic.title}`);
+
+      // Update next block
+      nextTitle.textContent = nextTopic.title;
+      nextBlock.setAttribute('aria-label', `Ďalšia téma: ${nextTopic.title}`);
+      nextBlock.onclick = () => {
+        goNext();
+      };
+
+      // Announce to screen readers
+      const panel = document.querySelector('.topic-panel');
+      panel.setAttribute('aria-live', 'polite');
+    }
+
+    // Navigation
+    function goNext() {
+      currentIndex = (currentIndex + 1) % topics.length;
+      render();
+    }
+
+    function goPrev() {
+      currentIndex = (currentIndex - 1 + topics.length) % topics.length;
+      render();
+    }
+
+    // Event Listeners
+    btnNext.addEventListener('click', goNext);
+    btnPrev.addEventListener('click', goPrev);
+
+    // Keyboard Navigation
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowRight') {
+        goNext();
+        btnNext.focus();
+      } else if (e.key === 'ArrowLeft') {
+        goPrev();
+        btnPrev.focus();
+      }
+    });
+
+    // Touch/Swipe Support
+    let touchStartX = 0;
+    let touchEndX = 0;
+
+    const topicCard = document.querySelector('.topic-card');
+
+    topicCard.addEventListener('touchstart', (e) => {
+      touchStartX = e.changedTouches[0].screenX;
+    }, { passive: true });
+
+    topicCard.addEventListener('touchend', (e) => {
+      touchEndX = e.changedTouches[0].screenX;
+      handleSwipe();
+    }, { passive: true });
+
+    function handleSwipe() {
+      const swipeThreshold = 50;
+      const diff = touchStartX - touchEndX;
+
+      if (Math.abs(diff) > swipeThreshold) {
+        if (diff > 0) {
+          // Swipe left -> next
+          goNext();
+        } else {
+          // Swipe right -> prev
+          goPrev();
+        }
+      }
+    }
+
+    // Preload next image
+    function preloadNext() {
+      const nextIndex = (currentIndex + 1) % topics.length;
+      const img = new Image();
+      img.src = topics[nextIndex].image;
+    }
+
+    // Initialize
+    render();
+    preloadNext();
+
+    // Preload on change
+    btnNext.addEventListener('click', preloadNext);
+    btnPrev.addEventListener('click', preloadNext);
+  </script>
+
+</body>
+</html>
