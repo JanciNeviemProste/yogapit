@@ -1,0 +1,42 @@
+{
+  "items": [
+    {
+      "label": "O nás",
+      "type": "dropdown",
+      "children": [
+        {
+          "label": "Poslanie",
+          "href": "/o-nas/poslanie"
+        },
+        {
+          "label": "Tím",
+          "href": "/o-nas/tim"
+        },
+        {
+          "label": "Ako nás podporiť",
+          "href": "/o-nas/podpora"
+        }
+      ]
+    },
+    {
+      "label": "Novinky",
+      "href": "/novinky"
+    },
+    {
+      "label": "Články",
+      "href": "/clanky"
+    },
+    {
+      "label": "Udalosti",
+      "href": "/udalosti"
+    },
+    {
+      "label": "Japa",
+      "href": "/japa"
+    },
+    {
+      "label": "Kontakt",
+      "href": "/kontakt"
+    }
+  ]
+}

@@ -26,6 +26,19 @@
     --input: 240 3.7% 15.9%;
     --ring: 276 65% 68%;
     --radius: 0.5rem;
+
+    /* Design tokens pre menu a right rail */
+    --header-primary: #8C49C9;
+    --header-primary-600: #7A3DB4;
+    --header-primary-700: #69349A;
+    --header-text: #FFFFFF;
+    --header-text-muted: #C9CAD1;
+    --header-bg: rgba(7, 10, 18, 0.65);
+    --header-bg-scrolled: rgba(7, 10, 18, 0.92);
+    --header-card-bg: rgba(14, 18, 28, 0.75);
+    --header-height-desktop: 72px;
+    --header-height-mobile: 64px;
+    --header-shadow-card: 0 8px 30px rgba(0, 0, 0, 0.35);
   }
 
   * {
@@ -85,5 +98,42 @@
       transition-duration: 0.01ms !important;
       scroll-behavior: auto !important;
     }
+  }
+
+  /* Devanagari font */
+  .font-devanagari {
+    font-family: var(--font-devanagari), var(--font-inter), sans-serif;
+  }
+}
+
+@layer utilities {
+  /* Menu underline hover animation */
+  .menu-link-underline {
+    position: relative;
+    display: inline-block;
+  }
+
+  .menu-link-underline::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(to right, var(--header-primary), var(--header-primary-600));
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 180ms ease-out;
+  }
+
+  .menu-link-underline:hover::after,
+  .menu-link-underline.active::after {
+    transform: scaleX(1);
+  }
+
+  /* Backdrop blur utilities */
+  .backdrop-blur-header {
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
   }
 }

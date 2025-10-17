@@ -1,0 +1,27 @@
+<svg width="600" height="800" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient (Warm golden) -->
+  <defs>
+    <linearGradient id="gourGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#8C5C2C;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#B8860B;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2C1810;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="800" fill="url(#gourGrad)"/>
+
+  <!-- Decorative circles -->
+  <circle cx="300" cy="280" r="120" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.15)" stroke-width="2"/>
+  <circle cx="300" cy="280" r="80" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.2)" stroke-width="2"/>
+
+  <!-- Lotus symbol -->
+  <path d="M300 220 Q280 240 270 270 Q275 250 300 240 Q325 250 330 270 Q320 240 300 220Z"
+        fill="rgba(255,255,255,0.6)" stroke="rgba(255,255,255,0.8)" stroke-width="1"/>
+  <path d="M300 240 Q260 260 250 300 Q270 270 300 260 Q330 270 350 300 Q340 260 300 240Z"
+        fill="rgba(255,255,255,0.4)" stroke="rgba(255,255,255,0.6)" stroke-width="1"/>
+
+  <!-- Text label -->
+  <text x="300" y="480" font-family="Georgia, serif" font-size="32" font-weight="bold" fill="rgba(255,255,255,0.95)" text-anchor="middle">Gour Govinda</text>
+  <text x="300" y="520" font-family="Georgia, serif" font-size="32" font-weight="bold" fill="rgba(255,255,255,0.95)" text-anchor="middle">Swāmī</text>
+  <text x="300" y="560" font-family="Arial, sans-serif" font-size="16" fill="rgba(255,255,255,0.6)" text-anchor="middle">Placeholder Image</text>
+</svg>

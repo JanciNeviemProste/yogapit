@@ -1,0 +1,32 @@
+{
+  "items": [
+    {
+      "title": "Gour Govinda Swāmī",
+      "slug": "gour-govinda-swami",
+      "ctaHref": "/tema/gour-govinda-swami",
+      "image": "/right/gour-govinda.jpg",
+      "next": "Sekta"
+    },
+    {
+      "title": "Sekta",
+      "slug": "sekta",
+      "ctaHref": "/tema/sekta",
+      "image": "/right/sekta.jpg",
+      "next": "Nevyspovedné prekážky"
+    },
+    {
+      "title": "Nevyspovedné prekážky",
+      "slug": "prekazky",
+      "ctaHref": "/tema/prekazky",
+      "image": "/right/prekazky.jpg",
+      "next": "Karma"
+    },
+    {
+      "title": "Karma",
+      "slug": "karma",
+      "ctaHref": "/tema/karma",
+      "image": "/right/karma.jpg",
+      "next": "Gour Govinda Swāmī"
+    }
+  ]
+}

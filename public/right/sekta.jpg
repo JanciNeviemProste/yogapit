@@ -1,0 +1,26 @@
+<svg width="600" height="800" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient (Dark purple) -->
+  <defs>
+    <linearGradient id="sektaGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#4A1C8A;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#8C49C9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1A0533;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="800" fill="url(#sektaGrad)"/>
+
+  <!-- Decorative circles -->
+  <circle cx="300" cy="280" r="130" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.1)" stroke-width="2"/>
+  <circle cx="300" cy="280" r="90" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.15)" stroke-width="2"/>
+  <circle cx="300" cy="280" r="50" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.2)" stroke-width="2"/>
+
+  <!-- Question mark symbol -->
+  <path d="M300 240 Q320 240 320 260 Q320 270 310 280 L305 295 L305 310"
+        stroke="rgba(255,255,255,0.7)" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <circle cx="305" cy="325" r="5" fill="rgba(255,255,255,0.7)"/>
+
+  <!-- Text label -->
+  <text x="300" y="500" font-family="Arial, sans-serif" font-size="48" font-weight="900" fill="rgba(255,255,255,0.95)" text-anchor="middle">SEKTA</text>
+  <text x="300" y="540" font-family="Arial, sans-serif" font-size="16" fill="rgba(255,255,255,0.6)" text-anchor="middle">Placeholder Image</text>
+</svg>

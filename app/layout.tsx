@@ -1,11 +1,19 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Noto_Sans_Devanagari } from "next/font/google";
 import "../styles/globals.css";
 import CookieConsent from "@/components/CookieConsent";
+import Header from "@/components/ui/header/Header";
 
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
+  display: "swap",
+  weight: ["300", "400", "500", "600", "700", "800"],
+});
+
+const notoDevanagari = Noto_Sans_Devanagari({
+  subsets: ["devanagari"],
+  variable: "--font-devanagari",
   display: "swap",
   weight: ["400", "500", "600", "700"],
 });
@@ -24,8 +32,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="sk" className={inter.variable}>
+    <html lang="sk" className={`${inter.variable} ${notoDevanagari.variable}`}>
       <body className="antialiased">
+        <Header />
         {children}
         <CookieConsent />
       </body>
