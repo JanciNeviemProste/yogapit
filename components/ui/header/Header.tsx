@@ -2,7 +2,8 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { Search } from "lucide-react";
+import Image from "next/image";
+import { Search, Facebook, Instagram } from "lucide-react";
 import { useScrolled } from "@/lib/useScrolled";
 import { DesktopMenu } from "./DesktopMenu";
 import { MobileMenu } from "./MobileMenu";
@@ -32,18 +33,46 @@ export default function Header() {
             {/* Logo */}
             <Link
               href="/"
-              className="flex items-center gap-2 text-white font-bold text-xl hover:opacity-80 transition-opacity"
+              className="flex items-center hover:opacity-80 transition-opacity"
               aria-label="Yogapit domov"
             >
-              <span className="text-[var(--header-primary)]">हरे कृष्ण</span>
-              <span className="hidden sm:inline">Yogapit</span>
+              <Image
+                src="/images/logo.png"
+                alt="Yogapit"
+                width={120}
+                height={40}
+                priority
+                className="object-contain"
+              />
             </Link>
 
             {/* Desktop menu */}
             <DesktopMenu className="hidden lg:flex" />
 
             {/* Right actions */}
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-2">
+              {/* Social icons (desktop only) */}
+              <div className="hidden md:flex items-center gap-2 mr-2">
+                <a
+                  href="https://www.facebook.com/yogapit"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-2 text-white/70 hover:text-[var(--header-primary)] transition-colors rounded-lg hover:bg-white/5"
+                  aria-label="Facebook"
+                >
+                  <Facebook className="w-5 h-5" />
+                </a>
+                <a
+                  href="https://www.instagram.com/yogapit"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-2 text-white/70 hover:text-[var(--header-primary)] transition-colors rounded-lg hover:bg-white/5"
+                  aria-label="Instagram"
+                >
+                  <Instagram className="w-5 h-5" />
+                </a>
+              </div>
+
               {/* Search button */}
               <button
                 onClick={() => setIsSearchOpen(true)}

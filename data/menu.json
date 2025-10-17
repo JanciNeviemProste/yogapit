@@ -5,16 +5,20 @@
       "type": "dropdown",
       "children": [
         {
-          "label": "Poslanie",
-          "href": "/o-nas/poslanie"
+          "label": "O nás",
+          "href": "/o-nas"
         },
         {
-          "label": "Tím",
-          "href": "/o-nas/tim"
+          "label": "Činnosti",
+          "href": "/o-nas/cinnosti"
         },
         {
-          "label": "Ako nás podporiť",
-          "href": "/o-nas/podpora"
+          "label": "Osobnosti",
+          "href": "/o-nas/osobnosti"
+        },
+        {
+          "label": "Projekty",
+          "href": "/o-nas/projekty"
         }
       ]
     },
@@ -24,7 +28,25 @@
     },
     {
       "label": "Články",
-      "href": "/clanky"
+      "type": "dropdown",
+      "children": [
+        {
+          "label": "Surdas prabhu",
+          "href": "/clanky/surdas-prabhu"
+        },
+        {
+          "label": "Gour Govinda Swāmī",
+          "href": "/clanky/gour-govinda-swami"
+        },
+        {
+          "label": "Sekta",
+          "href": "/clanky/sekta"
+        },
+        {
+          "label": "Nevyslovené prekážky",
+          "href": "/clanky/nevyslovene-prekazky"
+        }
+      ]
     },
     {
       "label": "Udalosti",
