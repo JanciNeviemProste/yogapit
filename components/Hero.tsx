@@ -1,48 +1,10 @@
 "use client";
 
 import Image from "next/image";
-import RightTopicPanel from "./RightTopicPanel";
-import type { Topic } from "./RightTopicPanel";
-
-// Demo témy pre pravý panel
-const demoTopics: Topic[] = [
-  {
-    id: "zombie",
-    title: "ZOMBIE",
-    category: "Sekta",
-    image: "/assets/zombie.svg",
-    url: "/tema/zombie",
-    nextTitle: "Nevyspovedné prekážky",
-  },
-  {
-    id: "prekazky",
-    title: "Nevyspovedné prekážky",
-    category: "Filozofia",
-    image: "/assets/prekazky.svg",
-    url: "/tema/prekazky",
-    nextTitle: "Karma",
-  },
-  {
-    id: "karma",
-    title: "Karma",
-    category: "Védske štúdiá",
-    image: "/assets/karma.svg",
-    url: "/tema/karma",
-    nextTitle: "Japa",
-  },
-  {
-    id: "japa",
-    title: "Japa",
-    category: "Praxe",
-    image: "/assets/japa.svg",
-    url: "/tema/japa",
-    nextTitle: "ZOMBIE",
-  },
-];
 
 export default function Hero() {
   return (
-    <div className="relative z-20 min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8">
+    <div className="relative z-20 min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 pt-20">
       <div className="max-w-7xl w-full mx-auto">
         {/* Horizontálny layout - text vľavo, logo vpravo */}
         <div className="flex flex-col lg:flex-row items-center justify-center gap-12 lg:gap-16">
@@ -133,16 +95,6 @@ export default function Hero() {
           </div>
 
         </div>
-      </div>
-
-      {/* Pravý panel tém - Desktop (fixný vpravo) */}
-      <div className="hidden xl:block fixed right-8 top-1/2 -translate-y-1/2 z-50">
-        <RightTopicPanel topics={demoTopics} initialIndex={0} />
-      </div>
-
-      {/* Pravý panel tém - Mobile (pod hero) */}
-      <div className="xl:hidden mt-12 px-4">
-        <RightTopicPanel topics={demoTopics} initialIndex={0} />
       </div>
     </div>
   );

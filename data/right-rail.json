@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "title": "Surdas prabhu",
+      "slug": "surdas-prabhu",
+      "ctaHref": "/tema/surdas-prabhu",
+      "image": "/right/surdas.jpg",
+      "next": "Gour Govinda Swāmī"
+    },
+    {
       "title": "Gour Govinda Swāmī",
       "slug": "gour-govinda-swami",
       "ctaHref": "/tema/gour-govinda-swami",
@@ -12,21 +19,14 @@
       "slug": "sekta",
       "ctaHref": "/tema/sekta",
       "image": "/right/sekta.jpg",
-      "next": "Nevyspovedné prekážky"
+      "next": "Nevyslovené prekážky"
     },
     {
-      "title": "Nevyspovedné prekážky",
+      "title": "Nevyslovené prekážky",
       "slug": "prekazky",
       "ctaHref": "/tema/prekazky",
       "image": "/right/prekazky.jpg",
-      "next": "Karma"
-    },
-    {
-      "title": "Karma",
-      "slug": "karma",
-      "ctaHref": "/tema/karma",
-      "image": "/right/karma.jpg",
-      "next": "Gour Govinda Swāmī"
+      "next": "Surdas prabhu"
     }
   ]
 }
