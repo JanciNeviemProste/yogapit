@@ -29,7 +29,7 @@ export default function RightRail() {
 
   return (
     <aside
-      className="fixed right-6 top-1/2 -translate-y-1/2 w-[380px] h-[520px] z-40 hidden xl:block"
+      className="fixed right-6 bottom-6 w-[380px] h-[520px] z-40 hidden xl:block"
       role="region"
       aria-label="Témy carousel"
     >

@@ -1,8 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import Link from "next/link";
-import Image from "next/image";
 import { Search, Facebook, Instagram } from "lucide-react";
 import { useScrolled } from "@/lib/useScrolled";
 import { DesktopMenu } from "./DesktopMenu";
@@ -30,21 +28,8 @@ export default function Header() {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full">
           <div className="flex items-center justify-between h-full">
-            {/* Logo */}
-            <Link
-              href="/"
-              className="flex items-center hover:opacity-80 transition-opacity"
-              aria-label="Yogapit domov"
-            >
-              <Image
-                src="/images/logo.png"
-                alt="Yogapit"
-                width={120}
-                height={40}
-                priority
-                className="object-contain"
-              />
-            </Link>
+            {/* Empty space (no logo in header on original) */}
+            <div className="w-32"></div>
 
             {/* Desktop menu */}
             <DesktopMenu className="hidden lg:flex" />
