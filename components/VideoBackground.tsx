@@ -1,9 +1,11 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import { useAudio } from "@/lib/AudioContext";
 
 export default function VideoBackground() {
   const videoRef = useRef<HTMLVideoElement>(null);
+  const { isMuted } = useAudio();
 
   useEffect(() => {
     if (videoRef.current) {
@@ -14,6 +16,12 @@ export default function VideoBackground() {
     }
   }, []);
 
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.muted = isMuted;
+    }
+  }, [isMuted]);
+
   return (
     <>
       {/* Video pozadie */}
@@ -21,7 +29,6 @@ export default function VideoBackground() {
         ref={videoRef}
         autoPlay
         loop
-        muted
         playsInline
         className="fixed top-0 left-0 w-full h-full object-cover z-0"
       >

@@ -3,6 +3,8 @@ import { Inter, Noto_Sans_Devanagari } from "next/font/google";
 import "../styles/globals.css";
 import CookieConsent from "@/components/CookieConsent";
 import Header from "@/components/ui/header/Header";
+import Footer from "@/components/Footer";
+import { AudioProvider } from "@/lib/AudioContext";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -34,9 +36,12 @@ export default function RootLayout({
   return (
     <html lang="sk" className={`${inter.variable} ${notoDevanagari.variable}`}>
       <body className="antialiased">
-        <Header />
-        {children}
-        <CookieConsent />
+        <AudioProvider>
+          <Header />
+          {children}
+          <Footer />
+          <CookieConsent />
+        </AudioProvider>
       </body>
     </html>
   );

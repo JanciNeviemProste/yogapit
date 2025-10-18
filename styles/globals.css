@@ -136,4 +136,20 @@
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
   }
+
+  /* Custom dropdown arrow (diagonal, like yogapit.sk) */
+  .custom-arrow {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-right: 2px solid currentColor;
+    border-bottom: 2px solid currentColor;
+    transform: rotate(45deg);
+    margin-left: 6px;
+    transition: transform 180ms ease-out;
+  }
+
+  .custom-arrow.open {
+    transform: rotate(-135deg);
+  }
 }

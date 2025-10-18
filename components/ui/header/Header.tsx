@@ -1,8 +1,9 @@
 "use client";
 
 import { useState } from "react";
-import { Search, Facebook, Instagram } from "lucide-react";
+import { Search, Volume2, VolumeX } from "lucide-react";
 import { useScrolled } from "@/lib/useScrolled";
+import { useAudio } from "@/lib/AudioContext";
 import { DesktopMenu } from "./DesktopMenu";
 import { MobileMenu } from "./MobileMenu";
 import SearchOverlay from "../SearchOverlay";
@@ -12,6 +13,7 @@ export default function Header() {
   const isScrolled = useScrolled(24);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const { isMuted, setIsMuted } = useAudio();
 
   return (
     <>
@@ -36,27 +38,14 @@ export default function Header() {
 
             {/* Right actions */}
             <div className="flex items-center gap-2">
-              {/* Social icons (desktop only) */}
-              <div className="hidden md:flex items-center gap-2 mr-2">
-                <a
-                  href="https://www.facebook.com/yogapit"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="p-2 text-white/70 hover:text-[var(--header-primary)] transition-colors rounded-lg hover:bg-white/5"
-                  aria-label="Facebook"
-                >
-                  <Facebook className="w-5 h-5" />
-                </a>
-                <a
-                  href="https://www.instagram.com/yogapit"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="p-2 text-white/70 hover:text-[var(--header-primary)] transition-colors rounded-lg hover:bg-white/5"
-                  aria-label="Instagram"
-                >
-                  <Instagram className="w-5 h-5" />
-                </a>
-              </div>
+              {/* Audio control */}
+              <button
+                onClick={() => setIsMuted(!isMuted)}
+                className="p-2 text-white hover:text-[var(--header-primary)] transition-colors rounded-lg hover:bg-white/5"
+                aria-label={isMuted ? "Zapnúť zvuk" : "Vypnúť zvuk"}
+              >
+                {isMuted ? <VolumeX className="w-5 h-5" /> : <Volume2 className="w-5 h-5" />}
+              </button>
 
               {/* Search button */}
               <button

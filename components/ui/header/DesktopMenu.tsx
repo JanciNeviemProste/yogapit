@@ -3,7 +3,6 @@
 import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { ChevronDown } from "lucide-react";
 import clsx from "clsx";
 import menuData from "@/data/menu.json";
 
@@ -37,10 +36,10 @@ export function DesktopMenu({ className }: DesktopMenuProps) {
                 aria-haspopup="true"
               >
                 {item.label}
-                <ChevronDown
+                <span
                   className={clsx(
-                    "w-4 h-4 transition-transform",
-                    openDropdown === item.label && "rotate-180"
+                    "custom-arrow",
+                    openDropdown === item.label && "open"
                   )}
                 />
               </button>
