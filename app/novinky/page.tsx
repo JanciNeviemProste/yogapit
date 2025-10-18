@@ -17,13 +17,14 @@ export default function NovinkyPage() {
       />
 
       <div className="relative z-20 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pb-20">
-        <div className="space-y-6">
+        <div className="space-y-0">
           {novinkyData.news.map((newsItem) => (
             <NewsCard
               key={newsItem.id}
               title={newsItem.title}
               date={newsItem.date}
               excerpt={newsItem.excerpt}
+              image={newsItem.image}
               link={newsItem.link}
             />
           ))}

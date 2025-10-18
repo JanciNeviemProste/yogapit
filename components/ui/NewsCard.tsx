@@ -1,28 +1,46 @@
 import Link from "next/link";
+import Image from "next/image";
 
 interface NewsCardProps {
   title: string;
   date: string;
   excerpt: string;
   link: string;
+  image: string;
 }
 
-export default function NewsCard({ title, date, excerpt, link }: NewsCardProps) {
+export default function NewsCard({ title, date, excerpt, link, image }: NewsCardProps) {
   return (
-    <Link href={link} className="group block">
-      <div className="p-6 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-[var(--header-primary)]/50 transition-all duration-300">
-        <div className="flex items-start justify-between gap-4 mb-3">
-          <h3 className="text-xl font-semibold text-white group-hover:text-[var(--header-primary)] transition-colors">
-            {title}
-          </h3>
-          <time className="text-sm text-gray-400 whitespace-nowrap">
+    <Link href={link} className="group block mb-4">
+      <div className="flex gap-4 hover:bg-[#4D4D4D] transition-colors duration-300 rounded">
+        {/* Image - fixed 210px width */}
+        <div className="relative w-[210px] h-[140px] flex-shrink-0">
+          <Image
+            src={image}
+            alt={title}
+            fill
+            className="object-cover rounded"
+            style={{ borderRadius: '4px' }}
+            sizes="210px"
+          />
+        </div>
+
+        {/* Text content */}
+        <div className="flex-1 py-2">
+          {/* Date */}
+          <time className="block text-[0.8rem] text-gray-400 mb-2">
             {new Date(date).toLocaleDateString('sk-SK')}
           </time>
-        </div>
-        <p className="text-gray-300 text-sm line-clamp-2 mb-4">{excerpt}</p>
-        <div className="inline-flex items-center gap-2 text-[var(--header-primary)] font-semibold text-sm group-hover:gap-3 transition-all">
-          Čítaj viac
-          <span className="transition-transform group-hover:translate-x-1">→</span>
+
+          {/* Title */}
+          <h3 className="text-[1.1rem] font-medium text-white mb-2 leading-snug">
+            {title}
+          </h3>
+
+          {/* Excerpt */}
+          <p className="text-sm text-gray-300 line-clamp-2">
+            {excerpt}
+          </p>
         </div>
       </div>
     </Link>
