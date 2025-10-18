@@ -1,44 +1,134 @@
 {
+  "categories": [
+    "Všetko",
+    "Udalosti",
+    "Oznamy",
+    "Púte",
+    "Webstránka",
+    "Kírtan",
+    "Kurzy",
+    "Komunita"
+  ],
   "news": [
     {
       "id": "new-logo-2024",
       "title": "Nové logo Yogapit",
+      "category": "Oznamy",
       "date": "2024-03-15",
+      "author": "Redakcia Yogapit",
       "excerpt": "Predstavujeme vám naše nové logo, ktoré lepšie reprezentuje našu misiu a hodnoty. Moderný dizajn zachováva tradičné prvky.",
-      "image": "https://placehold.co/210x140/8C49C9/white?text=Logo+2024",
+      "image": "https://placehold.co/400x300/8C49C9/white?text=Logo+2024",
       "link": "/novinky/new-logo-2024"
     },
     {
       "id": "bhagavatam-study",
       "title": "Štúdium Šrímad Bhagavatam",
+      "category": "Kurzy",
       "date": "2024-03-10",
+      "author": "Surdas prabhu",
       "excerpt": "Začíname nový cyklus štúdia Šrímad Bhagavatam. Pridajte sa k nám každý štvrtok o 18:00.",
-      "image": "https://placehold.co/210x140/8C49C9/white?text=Bhagavatam",
+      "image": "https://placehold.co/400x300/8C49C9/white?text=Bhagavatam",
       "link": "/novinky/bhagavatam-study"
     },
     {
       "id": "web-update",
       "title": "Nová webstránka",
+      "category": "Webstránka",
       "date": "2024-03-01",
+      "author": "Redakcia Yogapit",
       "excerpt": "Spustili sme našu novú webstránku s vylepšeným dizajnom a používateľským rozhraním. Nájdete tu všetky informácie o našich aktivitách.",
-      "image": "https://placehold.co/210x140/8C49C9/white?text=Web+Update",
+      "image": "https://placehold.co/400x300/8C49C9/white?text=Web+Update",
       "link": "/novinky/web-update"
     },
     {
       "id": "india-trip-2024",
       "title": "Cesta do Indie 2024",
+      "category": "Púte",
       "date": "2024-02-20",
+      "author": "Redakcia Yogapit",
       "excerpt": "Plánujeme púť do Vrindávanu a Mayápuru. Prihláste sa čo najskôr, počet miest je obmedzený.",
-      "image": "https://placehold.co/210x140/8C49C9/white?text=India+Trip",
+      "image": "https://placehold.co/400x300/8C49C9/white?text=India+Trip",
       "link": "/novinky/india-trip-2024"
     },
     {
       "id": "kirtan-event",
       "title": "Verejný kírtan v Bratislave",
+      "category": "Kírtan",
       "date": "2024-02-15",
-      "excerpt": "Pozývame vás na verejný kírtan v centre Bratislavy. Prídite si zaspievať mantr​y s nami.",
-      "image": "https://placehold.co/210x140/8C49C9/white?text=Kirtan",
+      "author": "Redakcia Yogapit",
+      "excerpt": "Pozývame vás na verejný kírtan v centre Bratislavy. Prídite si zaspievať mantry s nami.",
+      "image": "https://placehold.co/400x300/8C49C9/white?text=Kirtan",
       "link": "/novinky/kirtan-event"
+    },
+    {
+      "id": "bhakti-yoga-workshop",
+      "title": "Workshop bhakti-yogy",
+      "category": "Udalosti",
+      "date": "2024-02-10",
+      "author": "Surdas prabhu",
+      "excerpt": "Víkendový workshop zameraný na praktické aspekty bhakti-yogy. Registrácia je otvorená.",
+      "image": "https://placehold.co/400x300/8C49C9/white?text=Workshop",
+      "link": "/novinky/bhakti-yoga-workshop"
+    },
+    {
+      "id": "community-meeting",
+      "title": "Stretnutie komunity",
+      "category": "Komunita",
+      "date": "2024-02-05",
+      "author": "Redakcia Yogapit",
+      "excerpt": "Mesačné stretnutie našej komunity. Diskusia o budúcich aktivitách a projektoch.",
+      "image": "https://placehold.co/400x300/8C49C9/white?text=Meeting",
+      "link": "/novinky/community-meeting"
+    },
+    {
+      "id": "japa-retreat",
+      "title": "Japa retreat vo Vysokých Tatrách",
+      "category": "Udalosti",
+      "date": "2024-01-28",
+      "author": "Redakcia Yogapit",
+      "excerpt": "Trojdňový retreat zameraný na japu a meditáciu v krásnom prostredí Vysokých Tatier.",
+      "image": "https://placehold.co/400x300/8C49C9/white?text=Japa+Retreat",
+      "link": "/novinky/japa-retreat"
+    },
+    {
+      "id": "new-books",
+      "title": "Nové preklady kníh",
+      "category": "Oznamy",
+      "date": "2024-01-20",
+      "author": "Surdas prabhu",
+      "excerpt": "Práve vyšli nové slovenské preklady klasických védskych textov. K dispozícii na našej webstránke.",
+      "image": "https://placehold.co/400x300/8C49C9/white?text=Books",
+      "link": "/novinky/new-books"
+    },
+    {
+      "id": "sunday-feast",
+      "title": "Nedeľné programy pokračujú",
+      "category": "Komunita",
+      "date": "2024-01-15",
+      "author": "Redakcia Yogapit",
+      "excerpt": "Každú nedeľu vás pozývame na spoločný program s kírtanom, prednáškou a prasádam.",
+      "image": "https://placehold.co/400x300/8C49C9/white?text=Sunday",
+      "link": "/novinky/sunday-feast"
+    },
+    {
+      "id": "philosophy-course",
+      "title": "Kurz védskej filozofie",
+      "category": "Kurzy",
+      "date": "2024-01-10",
+      "author": "Surdas prabhu",
+      "excerpt": "Začíname nový kurz védskej filozofie pre začiatočníkov. Prihláste sa už dnes.",
+      "image": "https://placehold.co/400x300/8C49C9/white?text=Philosophy",
+      "link": "/novinky/philosophy-course"
+    },
+    {
+      "id": "mayapur-yatra",
+      "title": "Púť do Mayápuru 2024",
+      "category": "Púte",
+      "date": "2024-01-05",
+      "author": "Redakcia Yogapit",
+      "excerpt": "Organizujeme púť do Mayápuru na festival Gaura Púrnimy. Nezmeškajte túto jedinečnú príležitosť.",
+      "image": "https://placehold.co/400x300/8C49C9/white?text=Mayapur",
+      "link": "/novinky/mayapur-yatra"
     }
   ]
 }
