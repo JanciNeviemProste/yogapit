@@ -1,8 +1,11 @@
 "use client";
 
-import { Facebook, Instagram, ExternalLink } from "lucide-react";
+import { Facebook, Instagram, ExternalLink, Volume2, VolumeX } from "lucide-react";
+import { useAudio } from "@/lib/AudioContext";
 
 export default function Footer() {
+  const { isMuted, setIsMuted } = useAudio();
+
   return (
     <footer
       className="fixed bottom-[50px] left-1/2 -translate-x-1/2 z-30 hidden xl:flex items-center gap-4"
@@ -38,6 +41,14 @@ export default function Footer() {
       >
         <ExternalLink className="w-5 h-5" />
       </a>
+      {/* Audio control */}
+      <button
+        onClick={() => setIsMuted(!isMuted)}
+        className="p-2 text-white/60 hover:text-[var(--header-primary)] transition-all duration-300 hover:scale-125"
+        aria-label={isMuted ? "Zapnúť zvuk" : "Vypnúť zvuk"}
+      >
+        {isMuted ? <VolumeX className="w-5 h-5" /> : <Volume2 className="w-5 h-5" />}
+      </button>
     </footer>
   );
 }
