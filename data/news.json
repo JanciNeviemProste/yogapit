@@ -1,0 +1,110 @@
+[
+  {
+    "id": 101,
+    "title": "Vynovený kalendár + prepojenie s Google a Apple",
+    "slug": "vynoveny-kalendar",
+    "excerpt": "Dátumy Ekadaší, časy prerušenia, sviatky a ďalšie dôležité udalosti. Už sa nebudete môcť vyhovárať, že ste nevedeli 😄",
+    "dateISO": "2025-02-10T09:00:00.000Z",
+    "image": "https://placehold.co/800x450/1a1f2e/8C49C9?text=Kalendar",
+    "imageAlt": "Mesiac s príborom na tmavom pozadí"
+  },
+  {
+    "id": 102,
+    "title": "Nová verzia webstránky Yogapit.sk",
+    "slug": "nova-verzia-webstranky",
+    "excerpt": "Predstavujeme vám úplne prepracovanú verziu našej webstránky s moderným dizajnom, lepšou navigáciou a novými funkciami pre našu komunitu.",
+    "dateISO": "2025-02-05T10:30:00.000Z",
+    "image": "https://placehold.co/800x450/1a1f2e/8C49C9?text=Webstranka",
+    "imageAlt": "Náhľad novej webstránky Yogapit.sk"
+  },
+  {
+    "id": 103,
+    "title": "Púť do Vrindávanu - jar 2025",
+    "slug": "put-do-vrindavanu-2025",
+    "excerpt": "Organizujeme duchovnú púť do svätých miest Vrindávanu a Mayápuru. Prihláste sa včas, počet miest je obmedzený. Termín: 15.-30. marec 2025.",
+    "dateISO": "2025-01-28T08:00:00.000Z",
+    "image": "https://placehold.co/800x450/1a1f2e/8C49C9?text=Vrindavan",
+    "imageAlt": "Chrám vo Vrindávane"
+  },
+  {
+    "id": 104,
+    "title": "Workshop bhakti-yogy v Bratislave",
+    "slug": "workshop-bhakti-yogy",
+    "excerpt": "Víkendový workshop zameraný na praktické aspekty bhakti-yogy. Naučíte sa základy meditácie, správnu techniku japy a princípy duchovného života.",
+    "dateISO": "2025-01-20T14:00:00.000Z",
+    "image": "https://placehold.co/800x450/1a1f2e/8C49C9?text=Workshop",
+    "imageAlt": "Japa mála a kniha"
+  },
+  {
+    "id": 105,
+    "title": "Štúdium Bhagavad-gíty - nový cyklus",
+    "slug": "studium-bhagavad-gity",
+    "excerpt": "Začíname nový cyklus štúdia Bhagavad-gíty každý pondelok o 18:30. Vhodné pre začiatočníkov aj pokročilých. Online aj v našej sieni.",
+    "dateISO": "2025-01-15T09:15:00.000Z",
+    "image": "https://placehold.co/800x450/1a1f2e/8C49C9?text=Bhagavad+Gita",
+    "imageAlt": "Bhagavad-gíta As It Is"
+  },
+  {
+    "id": 106,
+    "title": "Nedeľný program s kírtanom a prasádam",
+    "slug": "nedelny-program",
+    "excerpt": "Každú nedeľu od 17:00 vás pozývame na spoločný program: bhádžan, prednáška, kírtan a prasádam. Vstup voľný, príďte si zaspievať s nami.",
+    "dateISO": "2025-01-10T11:00:00.000Z",
+    "image": "https://placehold.co/800x450/1a1f2e/8C49C9?text=Kirtan",
+    "imageAlt": "Kírtan s harmonikom"
+  },
+  {
+    "id": 107,
+    "title": "Nové preklady védskych textov",
+    "slug": "nove-preklady",
+    "excerpt": "Surdas prabhu dokončil preklady ďalších kapitol Šrímad Bhagavatam do slovenčiny. Texty sú dostupné na našej webstránke v sekcii Články.",
+    "dateISO": "2025-01-05T07:30:00.000Z",
+    "image": "https://placehold.co/800x450/1a1f2e/8C49C9?text=Preklady",
+    "imageAlt": "Starobylé sanskrtské texty"
+  },
+  {
+    "id": 108,
+    "title": "Odpovede na otázky o sekách a ISKCON",
+    "slug": "je-iskcon-sekta",
+    "excerpt": "Často kladené otázky o ISKCON a vysvetlenie, prečo nie je sektou, ale autentickou duchovnou tradíciou s 500-ročnou históriou v línii Šrí Čaitanyi.",
+    "dateISO": "2024-12-28T16:20:00.000Z",
+    "image": "https://placehold.co/800x450/1a1f2e/8C49C9?text=ISKCON",
+    "imageAlt": "Logo ISKCON"
+  },
+  {
+    "id": 109,
+    "title": "Duchovný rodinný život - prednáška",
+    "slug": "rodinny-zivot",
+    "excerpt": "Ako žiť duchovný život v rodine? Praktické rady pre všetkých, ktorí chcú spojiť duchovnú prax s rodinným životom. Prednáša Surdas prabhu.",
+    "dateISO": "2024-12-20T13:45:00.000Z",
+    "image": "https://placehold.co/800x450/1a1f2e/8C49C9?text=Rodina",
+    "imageAlt": "Šťastná rodina pri spoločnej činnosti"
+  },
+  {
+    "id": 110,
+    "title": "Vianočný kírtan a spoločné stretnutie",
+    "slug": "vianocny-kirtan",
+    "excerpt": "Špeciálny vianočný program s predĺženým kírtanom, prednáškou o význame zimného slnovratu a bohatým prasádam. 24. december od 16:00.",
+    "dateISO": "2024-12-15T10:00:00.000Z",
+    "image": "https://placehold.co/800x450/1a1f2e/8C49C9?text=Vianoce",
+    "imageAlt": "Vianočná výzdoba v chráme"
+  },
+  {
+    "id": 111,
+    "title": "Správna technika japy - workshop",
+    "slug": "technika-japy",
+    "excerpt": "Gour Govinda Swāmī učí o správnej technike japy. Workshop zahŕňa praktické cvičenia, odpovede na otázky a individuálne vedenie.",
+    "dateISO": "2024-12-10T09:30:00.000Z",
+    "image": "https://placehold.co/800x450/1a1f2e/8C49C9?text=Japa",
+    "imageAlt": "Japa mála v rukách"
+  },
+  {
+    "id": 112,
+    "title": "Osobnosti našej tradície - nová séria článkov",
+    "slug": "osobnosti-tradicie",
+    "excerpt": "Začíname sériu článkov o veľkých osobnostiach našej duchovnej postupnosti: Šrí Čaitanya, Šesť Goswámí, Bhaktivinód Thákur, Prabhupáda a ďalší.",
+    "dateISO": "2024-12-05T08:15:00.000Z",
+    "image": "https://placehold.co/800x450/1a1f2e/8C49C9?text=Osobnosti",
+    "imageAlt": "Portréty áčárjov"
+  }
+]

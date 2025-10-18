@@ -39,6 +39,15 @@
     --header-height-desktop: 72px;
     --header-height-mobile: 64px;
     --header-shadow-card: 0 8px 30px rgba(0, 0, 0, 0.35);
+
+    /* News page tokens */
+    --news-bg: #0a0e18;
+    --news-panel: rgba(18, 22, 32, 0.82);
+    --news-panel-border: rgba(255, 255, 255, 0.06);
+    --news-text: #E9ECF2;
+    --news-text-muted: #B8BBC7;
+    --news-accent: #8C49C9;
+    --news-accent-600: #7A3DB4;
   }
 
   * {
@@ -151,5 +160,18 @@
 
   .custom-arrow.open {
     transform: rotate(-135deg);
+  }
+
+  /* News card title underline */
+  .link-underline {
+    text-decoration: underline;
+    text-underline-offset: 6px;
+    text-decoration-thickness: 1.5px;
+    text-decoration-color: rgba(140, 73, 201, 0.8);
+    transition: color 0.18s ease;
+  }
+
+  .link-underline:hover {
+    color: #FFFFFF;
   }
 }

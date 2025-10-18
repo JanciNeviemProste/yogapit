@@ -1,72 +1,73 @@
 import Link from "next/link";
 import Image from "next/image";
-import { NewsItem } from "@/lib/types";
 
 interface NewsCardProps {
-  item: NewsItem;
+  id: number;
+  title: string;
+  slug: string;
+  excerpt: string;
+  dateISO: string;
+  image: string;
+  imageAlt: string;
 }
 
-export default function NewsCard({ item }: NewsCardProps) {
+export default function NewsCard({
+  id,
+  title,
+  slug,
+  excerpt,
+  dateISO,
+  image,
+  imageAlt
+}: NewsCardProps) {
   return (
-    <Link
-      href={item.link}
-      className="group block bg-white/5 rounded-lg overflow-hidden hover:bg-[#4D4D4D] transition-colors duration-300"
+    <article
+      className="group rounded-[12px] border border-[rgba(255,255,255,0.06)] bg-[rgba(18,22,32,0.82)] overflow-hidden backdrop-blur-[6px] transition-all hover:translate-y-[-3px] hover:ring-1 hover:ring-white/10 hover:border-white/14"
+      role="article"
+      aria-labelledby={`news-title-${id}`}
     >
-      {/* Image section - aspect ratio 4:3 */}
-      <div className="relative w-full aspect-[4/3]">
-        <Image
-          src={item.image}
-          alt={item.title}
-          fill
-          className="object-cover"
-          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 25vw"
-        />
-      </div>
+      {/* Text section - TOP */}
+      <div className="px-6 pt-6 pb-4">
+        <Link
+          href={`/novinky/${slug}`}
+          className="link-underline block"
+        >
+          <h3
+            id={`news-title-${id}`}
+            className="text-[18px] md:text-[19px] font-semibold leading-snug text-[var(--news-text)]"
+          >
+            {title}
+          </h3>
+        </Link>
 
-      {/* Content section */}
-      <div className="p-5 space-y-3">
-        {/* Category chip */}
-        <div className="inline-block">
-          <span className="text-xs font-medium px-3 py-1 rounded-full bg-[var(--header-primary)]/20 text-[var(--header-primary)]">
-            {item.category}
-          </span>
-        </div>
-
-        {/* Title - max 2 lines */}
-        <h3 className="text-xl font-semibold text-white leading-tight line-clamp-2">
-          {item.title}
-        </h3>
-
-        {/* Meta: Author + Date */}
-        <div className="flex items-center gap-2 text-sm text-gray-400">
-          {item.author && (
-            <>
-              <span>{item.author}</span>
-              <span>•</span>
-            </>
-          )}
-          <time dateTime={item.date}>
-            {new Date(item.date).toLocaleDateString('sk-SK', {
-              year: 'numeric',
-              month: 'long',
-              day: 'numeric'
-            })}
-          </time>
-        </div>
-
-        {/* Excerpt - max 3 lines */}
-        <p className="text-gray-300 text-sm leading-relaxed line-clamp-3">
-          {item.excerpt}
+        <p className="mt-2 text-[14px] leading-6 text-[var(--news-text-muted)] line-clamp-3">
+          {excerpt}
         </p>
-
-        {/* CTA */}
-        <div className="pt-2">
-          <span className="text-[var(--header-primary)] text-sm font-medium inline-flex items-center gap-1 group-hover:gap-2 transition-all">
-            Čítaj viac
-            <span className="transition-transform group-hover:translate-x-1">→</span>
-          </span>
-        </div>
       </div>
-    </Link>
+
+      {/* Image section - BOTTOM */}
+      <Link href={`/novinky/${slug}`} className="relative block">
+        <div className="relative w-full aspect-[16/9]">
+          <Image
+            src={image}
+            alt={imageAlt}
+            fill
+            className="object-cover rounded-b-[10px] transition-transform duration-200 ease-out group-hover:scale-[1.02]"
+            sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
+          />
+        </div>
+
+        {/* "ČÍTAJ VIAC" badge - circular, left bottom on image */}
+        <div
+          className="absolute left-4 bottom-4 w-[64px] h-[64px] grid place-items-center rounded-full text-[11px] tracking-[.14em] uppercase font-medium text-white/90 border border-white/15 backdrop-blur-[2px]"
+          style={{
+            background: 'radial-gradient(66% 66% at 50% 50%, rgba(140,73,201,.75) 0%, rgba(140,73,201,.35) 55%, rgba(140,73,201,.10) 100%)'
+          }}
+          aria-label="Čítaj celý článok"
+        >
+          ČÍTAJ<br/>VIAC
+        </div>
+      </Link>
+    </article>
   );
 }
