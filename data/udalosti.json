@@ -1,0 +1,82 @@
+{
+  "regularPrograms": [
+    {
+      "title": "Štúdium Šrímad Bhagavatam",
+      "day": "Štvrtok",
+      "time": "18:00",
+      "location": "Bratislava centrum",
+      "description": "Pravidelné štúdium sanskritského textu Šrímad Bhagavatam s komentármi."
+    },
+    {
+      "title": "Nedel​ný program",
+      "day": "Nedeľa",
+      "time": "17:00",
+      "location": "Bratislava centrum",
+      "description": "Kírtan, prednáška, prasádam (posvätená strava) a spoločenstvo."
+    },
+    {
+      "title": "Japa meditácia",
+      "day": "Utorok",
+      "time": "06:30",
+      "location": "Online Discord",
+      "description": "Ranná japa meditácia spolu s komunitou cez Discord."
+    },
+    {
+      "title": "Bhagavad Gíta",
+      "day": "Streda",
+      "time": "19:00",
+      "location": "Online",
+      "description": "Štúdium Bhagavad Gíty s diskusiou a otázkami."
+    }
+  ],
+  "upcomingEvents": [
+    {
+      "id": "gaura-purnima-2024",
+      "month": "Mar",
+      "day": "25",
+      "year": 2024,
+      "title": "Gaura Púrńima",
+      "description": "Oslava narodenia Šrí Čaitanyi Maháprabhua. Celodenný program s kírtanom, prednáškami a hostinou.",
+      "link": "/udalosti/gaura-purnima-2024"
+    },
+    {
+      "id": "ratha-yatra-2024",
+      "month": "Jún",
+      "day": "15",
+      "year": 2024,
+      "title": "Ratha Yatra Bratislava",
+      "description": "Tradičný festival vozov v uliciach Bratislavy. Sprievod, kírtan, divadelné predstavenia a prasádam.",
+      "link": "/udalosti/ratha-yatra-2024"
+    },
+    {
+      "id": "janmastami-2024",
+      "month": "Aug",
+      "day": "26",
+      "year": 2024,
+      "title": "Janmáṣṭamī",
+      "description": "Oslava narodenia Šrí Kŕṣńy. Pôst, kírtan, polnočná aarátí a hostina.",
+      "link": "/udalosti/janmastami-2024"
+    }
+  ],
+  "pastEvents": [
+    {
+      "date": "2024-02-24",
+      "title": "Gaura Púrńima 2024",
+      "description": "Úspešná oslava s viac ako 100 účastníkmi."
+    },
+    {
+      "date": "2024-01-15",
+      "title": "Novoročný program",
+      "description": "Začiatok nového roka s duchovnými predsavzatiami."
+    },
+    {
+      "date": "2023-12-25",
+      "title": "Vianočný kírtan",
+      "description": "Špeciálny kírtan program počas vianočných sviatkov."
+    }
+  ],
+  "calendarLinks": {
+    "google": "https://calendar.google.com/calendar/yogapit",
+    "apple": "webcal://yogapit.sk/calendar.ics"
+  }
+}

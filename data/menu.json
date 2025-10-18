@@ -31,6 +31,10 @@
       "type": "dropdown",
       "children": [
         {
+          "label": "Všetky články",
+          "href": "/clanky"
+        },
+        {
           "label": "Surdas prabhu",
           "href": "/clanky/surdas-prabhu"
         },

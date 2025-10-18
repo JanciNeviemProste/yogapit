@@ -1,0 +1,72 @@
+{
+  "hero": {
+    "title": "Osobnosti",
+    "subtitle": "गुरु",
+    "description": "Naša duchovná postupnosť učiteľov a žiakov (parampara) zahŕňa rôzne osobnosti, guruov a ačárjov..."
+  },
+  "personalities": [
+    {
+      "id": "sri-caitanya",
+      "name": "Šrí Čaitanya Maháprabhu",
+      "subtitle": "Zlatý Avatár",
+      "image": "/images/osobnosti/sri-caitanya.jpg",
+      "era": "1486-1534",
+      "link": "/osobnosti/sri-caitanya-mahaprabhu"
+    },
+    {
+      "id": "rupa-goswami",
+      "name": "Šrí Rúpa Goswámí",
+      "subtitle": "Šesť Goswámí z Vrindávanu",
+      "image": "/images/osobnosti/rupa-goswami.jpg",
+      "era": "1489-1564",
+      "link": "/osobnosti/rupa-goswami"
+    },
+    {
+      "id": "sanatana-goswami",
+      "name": "Šrí Sanátana Goswámí",
+      "subtitle": "Šesť Goswámí z Vrindávanu",
+      "image": "/images/osobnosti/sanatana-goswami.jpg",
+      "era": "1488-1558",
+      "link": "/osobnosti/sanatana-goswami"
+    },
+    {
+      "id": "bhaktivinoda",
+      "name": "Bhaktivinód Thákur",
+      "subtitle": "Siedmy Goswámí",
+      "image": "/images/osobnosti/bhaktivinoda.jpg",
+      "era": "1838-1914",
+      "link": "/osobnosti/bhaktivinoda-thakur"
+    },
+    {
+      "id": "bhaktisiddhanta",
+      "name": "Bhaktisiddhánta Sarasvatí Thákur",
+      "subtitle": "Zakladateľ Gauḍíya Maṭhu",
+      "image": "/images/osobnosti/bhaktisiddhanta.jpg",
+      "era": "1874-1937",
+      "link": "/osobnosti/bhaktisiddhanta-sarasvati"
+    },
+    {
+      "id": "prabhupada",
+      "name": "A.C. Bhaktivedanta Swami Prabhupáda",
+      "subtitle": "Zakladateľ ISKCON",
+      "image": "/images/osobnosti/prabhupada.jpg",
+      "era": "1896-1977",
+      "link": "/osobnosti/prabhupada"
+    },
+    {
+      "id": "surdas",
+      "name": "Surdas prabhu",
+      "subtitle": "Učiteľ a prekladateľ",
+      "image": "/images/osobnosti/surdas.jpg",
+      "link": "/osobnosti/surdas-prabhu"
+    },
+    {
+      "id": "gour-govinda",
+      "name": "Gour Govinda Swāmī",
+      "subtitle": "ISKCON sannyási",
+      "image": "/images/osobnosti/gour-govinda.jpg",
+      "era": "1929-1996",
+      "link": "/osobnosti/gour-govinda-swami"
+    }
+  ]
+}

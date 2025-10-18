@@ -1,0 +1,68 @@
+{
+  "intro": "Ponúkame vám kolekciu článkov o védskej filozofii, duchovnej praxi a osobnostiach našej tradície. Všetky články sú starostlivo preložené a pripravené pre modernú spoločnosť.",
+  "categories": [
+    "Surdas prabhu",
+    "Gour Govinda Swāmī",
+    "Sekta",
+    "Filozofia",
+    "Kázanie",
+    "Japa",
+    "Rodinný život",
+    "Sadhana",
+    "Praktické",
+    "Osobnosti",
+    "Bhagavad Gíta"
+  ],
+  "articles": [
+    {
+      "id": "bhakti-základy",
+      "title": "Základy bhakti-yogy",
+      "category": "Filozofia",
+      "author": "Surdas prabhu",
+      "date": "2024-03-01",
+      "excerpt": "Bhakti-yoga je cesta oddanej služby, ktorá vedie k najvyššej realizácii. Spoznajte základné princípy tejto večnej vedy.",
+      "image": "/images/clanky/bhakti-zaklady.jpg",
+      "link": "/clanky/bhakti-zaklady"
+    },
+    {
+      "id": "japa-technika",
+      "title": "Správna technika japy",
+      "category": "Japa",
+      "author": "Gour Govinda Swāmī",
+      "date": "2024-02-28",
+      "excerpt": "Japa je duchovná prax spievania mantier. Naučte sa správnu techniku a prístup k tejto mocnej meditácii.",
+      "image": "/images/clanky/japa-technika.jpg",
+      "link": "/clanky/japa-technika"
+    },
+    {
+      "id": "sekta-mýtus",
+      "title": "Je ISKCON sekta?",
+      "category": "Sekta",
+      "author": "Surdas prabhu",
+      "date": "2024-02-25",
+      "excerpt": "Odpovedáme na často kladené otázky o ISKCON a vysvetľujeme, prečo nie je sektou, ale autentickou duchovnou tradíciou.",
+      "image": "/images/clanky/sekta-mytus.jpg",
+      "link": "/clanky/sekta-mytus"
+    },
+    {
+      "id": "nevysloven​é-prekazky",
+      "title": "Nevyslovené prekážky na duchovnej ceste",
+      "category": "Nevyslovené prekážky",
+      "author": "Surdas prabhu",
+      "date": "2024-02-20",
+      "excerpt": "Existuje mnoho skrytých prekážok, ktoré nás brzdia v duchovnom pokroku. Spoznajte ich a naučte sa ich prekonať.",
+      "image": "/images/clanky/nevyslovene-prekazky.jpg",
+      "link": "/clanky/nevyslovene-prekazky"
+    },
+    {
+      "id": "rodinny-zivot",
+      "title": "Duchovný rodinný život",
+      "category": "Rodinný život",
+      "author": "Surdas prabhu",
+      "date": "2024-02-15",
+      "excerpt": "Ako žiť duchovný život v rodine? Praktické rady pre všetkých, ktorí chcú spojiť duchovnú prax s rodinným životom.",
+      "image": "/images/clanky/rodinny-zivot.jpg",
+      "link": "/clanky/rodinny-zivot"
+    }
+  ]
+}

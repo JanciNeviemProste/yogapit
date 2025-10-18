@@ -1,0 +1,40 @@
+{
+  "hero": {
+    "title": "O nás",
+    "subtitle": "नियोग",
+    "description": "Cieľom našej komunity je zoznámiť materialistickú spoločnosť s originálnou východnou filozofiou – Sanatana-dharma zrozumiteľnou a modernou formou."
+  },
+  "sections": [
+    {
+      "title": "Filozofický prístup",
+      "content": "Aktuálny filozofický prístup spoločnosti je veľmi povrchný a nevedie ľudí k pochopeniu hlbších otázok existencie. Naším cieľom je obnoviť duchovnú rovnováhu a sprostredkovať vedomosti prístupným spôsobom."
+    },
+    {
+      "title": "Podmienky členstva",
+      "content": "Pre členstvo v našej komunite je potrebné:",
+      "items": [
+        "Aktívna praktika filozofie",
+        "Správne pochopenie učenia",
+        "Schopnosť rozpoznať filozofické deviácie",
+        "Dodržiavanie úctivého správania"
+      ]
+    },
+    {
+      "title": "Komunita",
+      "members": 105,
+      "platform": "Discord",
+      "location": "Bratislava centrum",
+      "content": "Aktuálne má naša komunita 105 členov. Komunikujeme cez Discord a pravidelne sa stretávame v bratislavskom centre."
+    }
+  ],
+  "activities": [
+    "Štúdium védskych vedomostí",
+    "Metafyzická aplikácia",
+    "Mantra meditácia & yoga",
+    "Moderné šírenie učenia",
+    "Prieskum indickej kultúry",
+    "Preklady a publikovanie",
+    "Odhaľovanie pseudouče​ní",
+    "Systematický postup členov"
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "intro": "Naša komunita realizuje niekoľko projektov zameraných na šírenie védskej filozofie a kultúry. Pridajte sa k nám na Discorde a zapojte sa do našich programov.",
+  "projects": [
+    {
+      "id": "sankirtan",
+      "title": "Sankírtan",
+      "subtitle": "šírenie filozofie",
+      "icon": "🎵",
+      "description": "Sankírtan znamená spoločné spievanie svätých mien. Pravidelne organizujeme verejné programy na šírenie mantier a filozofie bhakti-yogy.",
+      "link": "/projekty/sankirtan"
+    },
+    {
+      "id": "hari-nama",
+      "title": "Hari náma",
+      "subtitle": "mantra yoga",
+      "icon": "🧘",
+      "description": "Mantra meditácia je základom našej praxe. Organizujeme skupinové japa seansy a učíme správnu techniku spievania svätých mien.",
+      "link": "/projekty/hari-nama"
+    },
+    {
+      "id": "vzdelavanie",
+      "title": "Vzdelávanie členov & kultivácia",
+      "subtitle": "systematické štúdium",
+      "icon": "📚",
+      "description": "Pravidelné vzdelávacie programy, štúdium védskych textov a osobný duchovný rozvoj našich členov pod vedením skúsených praktikov.",
+      "link": "/projekty/vzdelavanie"
+    },
+    {
+      "id": "preklady",
+      "title": "Preklady a publikovanie",
+      "subtitle": "védska literatúra",
+      "icon": "📖",
+      "description": "Prekladáme a publikujeme autentické védske texty do slovenčiny. Naším cieľom je sprístupniť originálne učenia širokej verejnosti.",
+      "link": "/projekty/preklady"
+    },
+    {
+      "id": "india",
+      "title": "Cesty do Indie",
+      "subtitle": "púte a štúdium",
+      "icon": "✈️",
+      "description": "Organizujeme púte do svätých miest Indie, kde sa členovia môžu hlbšie ponoriť do védskej kultúry a stretávať sa s duchovnými učiteľmi.",
+      "link": "/projekty/cesty-do-indie"
+    }
+  ]
+}

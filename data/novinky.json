@@ -1,0 +1,39 @@
+{
+  "news": [
+    {
+      "id": "new-logo-2024",
+      "title": "Nové logo Yogapit",
+      "date": "2024-03-15",
+      "excerpt": "Predstavujeme vám naše nové logo, ktoré lepšie reprezentuje našu misiu a hodnoty. Moderný dizajn zachováva tradičné prvky.",
+      "link": "/novinky/new-logo-2024"
+    },
+    {
+      "id": "bhagavatam-study",
+      "title": "Štúdium Šrímad Bhagavatam",
+      "date": "2024-03-10",
+      "excerpt": "Začíname nový cyklus štúdia Šrímad Bhagavatam. Pridajte sa k nám každý štvrtok o 18:00.",
+      "link": "/novinky/bhagavatam-study"
+    },
+    {
+      "id": "web-update",
+      "title": "Nová webstránka",
+      "date": "2024-03-01",
+      "excerpt": "Spustili sme našu novú webstránku s vylepšeným dizajnom a používateľským rozhraním. Nájdete tu všetky informácie o našich aktivitách.",
+      "link": "/novinky/web-update"
+    },
+    {
+      "id": "india-trip-2024",
+      "title": "Cesta do Indie 2024",
+      "date": "2024-02-20",
+      "excerpt": "Plánujeme púť do Vrindávanu a Mayápuru. Prihláste sa čo najskôr, počet miest je obmedzený.",
+      "link": "/novinky/india-trip-2024"
+    },
+    {
+      "id": "kirtan-event",
+      "title": "Verejný kírtan v Bratislave",
+      "date": "2024-02-15",
+      "excerpt": "Pozývame vás na verejný kírtan v centre Bratislavy. Prídite si zaspievať mantr​y s nami.",
+      "link": "/novinky/kirtan-event"
+    }
+  ]
+}

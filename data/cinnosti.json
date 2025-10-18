@@ -1,0 +1,105 @@
+{
+  "hero": {
+    "title": "Činnosti",
+    "subtitle": "Aktivity našej komunity",
+    "description": "Naša komunita sa venuje mnohým činnostiam, ktoré podporujú duchovný rozvoj a šírenie védskej múdrosti."
+  },
+  "activities": [
+    {
+      "id": "studium",
+      "title": "Štúdium védskych vedomostí",
+      "icon": "📚",
+      "description": "Pravidelné štúdium védskych textov ako Bhagavad Gíta, Šrímad Bhagavatam a ostatných písiem pod vedením skúsených učiteľov.",
+      "details": [
+        "Skupinové štúdium textov",
+        "Osobná konzultácia s učiteľmi",
+        "Semináre a workshopy",
+        "Online štúdium cez Discord"
+      ]
+    },
+    {
+      "id": "metafyzika",
+      "title": "Metafyzická aplikácia",
+      "icon": "🔮",
+      "description": "Aplikácia védskej metafyziky v praktickej každodennosti. Učíme sa chápať hlbšie princípy existencie.",
+      "details": [
+        "Pochopenie karmy a reinkarnácie",
+        "Vzťah medzi dušou a hmotou",
+        "Praktické riešenie životných situácií",
+        "Duchovná psychológia"
+      ]
+    },
+    {
+      "id": "meditacia",
+      "title": "Mantra meditácia & yoga",
+      "icon": "🧘",
+      "description": "Pravidel​ná prax japy (spievanie mantier) a bhakti-yogy. Ranné aj večerné programy.",
+      "details": [
+        "Ranná japa o 6:30",
+        "Skupinový kírtan",
+        "Meditačné techniky",
+        "Pranayama a ásany"
+      ]
+    },
+    {
+      "id": "sirenie",
+      "title": "Moderné šírenie učenia",
+      "icon": "📢",
+      "description": "Využívame moderné technológie a médiá na šírenie védskej múdrosti prístupným spôsobom.",
+      "details": [
+        "Sociálne siete a web",
+        "Podcasty a videá",
+        "Verejné prednášky",
+        "Články a blogy"
+      ]
+    },
+    {
+      "id": "kultura",
+      "title": "Prieskum indickej kultúry",
+      "icon": "🕉️",
+      "description": "Spoznávanie bohatej indickej kultúry, tradícií, umenia a duchovných praktík.",
+      "details": [
+        "Tradičné festivaly",
+        "Indické varenie",
+        "Mantra hudba",
+        "Púte do Indie"
+      ]
+    },
+    {
+      "id": "preklady",
+      "title": "Preklady a publikovanie",
+      "icon": "✍️",
+      "description": "Prekladanie autentických védskych textov do slovenčiny a ich publikovanie.",
+      "details": [
+        "Preklady kníh",
+        "Online publikácie",
+        "Časopisy a bulletiny",
+        "E-knihy a audio"
+      ]
+    },
+    {
+      "id": "kriticke-myslenie",
+      "title": "Odhaľovanie pseudoučení",
+      "icon": "🔍",
+      "description": "Vzdelávanie o rozpoznávaní autentických učení od pseudoduchovných trendov a deviácií.",
+      "details": [
+        "Kritické myslenie",
+        "Analýza učení",
+        "Ochrana pred manipuláciou",
+        "Autentická parampara"
+      ]
+    },
+    {
+      "id": "postup",
+      "title": "Systematický postup členov",
+      "icon": "📈",
+      "description": "Individuálny prístup ku každému členovi s cieľom postupného duchovného rozvoja.",
+      "details": [
+        "Osobný duchovný mentor",
+        "Stupne zasvätenia",
+        "Pravidelné hodnotenie pokroku",
+        "Podpora v praxi"
+      ]
+    }
+  ]
+}
