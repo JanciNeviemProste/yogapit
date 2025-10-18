@@ -16,8 +16,8 @@ export default function NovinkyPage() {
         description="Najnovšie správy a aktuality z našej komunity."
       />
 
-      <div className="relative z-20 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pb-20">
-        <div className="space-y-0">
+      <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {novinkyData.news.map((newsItem) => (
             <NewsCard
               key={newsItem.id}

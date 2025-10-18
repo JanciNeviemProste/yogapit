@@ -11,36 +11,41 @@ interface NewsCardProps {
 
 export default function NewsCard({ title, date, excerpt, link, image }: NewsCardProps) {
   return (
-    <Link href={link} className="group block mb-4">
-      <div className="flex gap-4 hover:bg-[#4D4D4D] transition-colors duration-300 rounded">
-        {/* Image - fixed 210px width */}
-        <div className="relative w-[210px] h-[140px] flex-shrink-0">
+    <Link href={link} className="group block">
+      <div className="bg-white/5 rounded-lg overflow-hidden hover:bg-[#4D4D4D] transition-colors duration-300">
+        {/* Image section - top, full width */}
+        <div className="relative w-full h-[220px]">
           <Image
             src={image}
             alt={title}
             fill
-            className="object-cover rounded"
-            style={{ borderRadius: '4px' }}
-            sizes="210px"
+            className="object-cover"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />
         </div>
 
-        {/* Text content */}
-        <div className="flex-1 py-2">
-          {/* Date */}
-          <time className="block text-[0.8rem] text-gray-400 mb-2">
-            {new Date(date).toLocaleDateString('sk-SK')}
-          </time>
-
+        {/* Content section - below image */}
+        <div className="p-5">
           {/* Title */}
-          <h3 className="text-[1.1rem] font-medium text-white mb-2 leading-snug">
+          <h3 className="text-xl font-semibold text-white mb-2 leading-tight">
             {title}
           </h3>
 
+          {/* Date - BELOW title */}
+          <time className="block text-sm text-gray-400 mb-3">
+            {new Date(date).toLocaleDateString('sk-SK')}
+          </time>
+
           {/* Excerpt */}
-          <p className="text-sm text-gray-300 line-clamp-2">
+          <p className="text-gray-300 text-sm line-clamp-2 mb-4 leading-relaxed">
             {excerpt}
           </p>
+
+          {/* "Čítaj viac" link */}
+          <span className="text-[var(--header-primary)] text-sm font-medium inline-flex items-center gap-1 group-hover:gap-2 transition-all">
+            Čítaj viac
+            <span className="transition-transform group-hover:translate-x-1">→</span>
+          </span>
         </div>
       </div>
     </Link>
