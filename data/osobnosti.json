@@ -9,7 +9,7 @@
       "id": "sri-caitanya",
       "name": "Šrí Čaitanya Maháprabhu",
       "subtitle": "Zlatý Avatár",
-      "image": "/images/osobnosti/sri-caitanya.jpg",
+      "image": "https://placehold.co/300x400/8C49C9/white?text=Sri+Caitanya",
       "era": "1486-1534",
       "link": "/osobnosti/sri-caitanya-mahaprabhu"
     },
@@ -17,7 +17,7 @@
       "id": "rupa-goswami",
       "name": "Šrí Rúpa Goswámí",
       "subtitle": "Šesť Goswámí z Vrindávanu",
-      "image": "/images/osobnosti/rupa-goswami.jpg",
+      "image": "https://placehold.co/300x400/8C49C9/white?text=Rupa+Goswami",
       "era": "1489-1564",
       "link": "/osobnosti/rupa-goswami"
     },
@@ -25,7 +25,7 @@
       "id": "sanatana-goswami",
       "name": "Šrí Sanátana Goswámí",
       "subtitle": "Šesť Goswámí z Vrindávanu",
-      "image": "/images/osobnosti/sanatana-goswami.jpg",
+      "image": "https://placehold.co/300x400/8C49C9/white?text=Sanatana",
       "era": "1488-1558",
       "link": "/osobnosti/sanatana-goswami"
     },
@@ -33,7 +33,7 @@
       "id": "bhaktivinoda",
       "name": "Bhaktivinód Thákur",
       "subtitle": "Siedmy Goswámí",
-      "image": "/images/osobnosti/bhaktivinoda.jpg",
+      "image": "https://placehold.co/300x400/8C49C9/white?text=Bhaktivinoda",
       "era": "1838-1914",
       "link": "/osobnosti/bhaktivinoda-thakur"
     },
@@ -41,7 +41,7 @@
       "id": "bhaktisiddhanta",
       "name": "Bhaktisiddhánta Sarasvatí Thákur",
       "subtitle": "Zakladateľ Gauḍíya Maṭhu",
-      "image": "/images/osobnosti/bhaktisiddhanta.jpg",
+      "image": "https://placehold.co/300x400/8C49C9/white?text=Bhaktisiddhanta",
       "era": "1874-1937",
       "link": "/osobnosti/bhaktisiddhanta-sarasvati"
     },
@@ -49,7 +49,7 @@
       "id": "prabhupada",
       "name": "A.C. Bhaktivedanta Swami Prabhupáda",
       "subtitle": "Zakladateľ ISKCON",
-      "image": "/images/osobnosti/prabhupada.jpg",
+      "image": "https://placehold.co/300x400/8C49C9/white?text=Prabhupada",
       "era": "1896-1977",
       "link": "/osobnosti/prabhupada"
     },
@@ -57,14 +57,14 @@
       "id": "surdas",
       "name": "Surdas prabhu",
       "subtitle": "Učiteľ a prekladateľ",
-      "image": "/images/osobnosti/surdas.jpg",
+      "image": "https://placehold.co/300x400/8C49C9/white?text=Surdas",
       "link": "/osobnosti/surdas-prabhu"
     },
     {
       "id": "gour-govinda",
       "name": "Gour Govinda Swāmī",
       "subtitle": "ISKCON sannyási",
-      "image": "/images/osobnosti/gour-govinda.jpg",
+      "image": "https://placehold.co/300x400/8C49C9/white?text=Gour+Govinda",
       "era": "1929-1996",
       "link": "/osobnosti/gour-govinda-swami"
     }

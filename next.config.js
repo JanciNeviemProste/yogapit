@@ -1,8 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  outputFileTracingRoot: __dirname,
   images: {
-    domains: ['yogapit.sk'],
+    domains: ['yogapit.sk', 'placehold.co'],
+    unoptimized: true,
   },
   webpack: (config) => {
     config.module.rules.push({

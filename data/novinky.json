@@ -5,7 +5,7 @@
       "title": "Nové logo Yogapit",
       "date": "2024-03-15",
       "excerpt": "Predstavujeme vám naše nové logo, ktoré lepšie reprezentuje našu misiu a hodnoty. Moderný dizajn zachováva tradičné prvky.",
-      "image": "/images/novinky/logo-2024.jpg",
+      "image": "https://placehold.co/210x140/8C49C9/white?text=Logo+2024",
       "link": "/novinky/new-logo-2024"
     },
     {
@@ -13,7 +13,7 @@
       "title": "Štúdium Šrímad Bhagavatam",
       "date": "2024-03-10",
       "excerpt": "Začíname nový cyklus štúdia Šrímad Bhagavatam. Pridajte sa k nám každý štvrtok o 18:00.",
-      "image": "/images/novinky/bhagavatam.jpg",
+      "image": "https://placehold.co/210x140/8C49C9/white?text=Bhagavatam",
       "link": "/novinky/bhagavatam-study"
     },
     {
@@ -21,7 +21,7 @@
       "title": "Nová webstránka",
       "date": "2024-03-01",
       "excerpt": "Spustili sme našu novú webstránku s vylepšeným dizajnom a používateľským rozhraním. Nájdete tu všetky informácie o našich aktivitách.",
-      "image": "/images/novinky/web-update.jpg",
+      "image": "https://placehold.co/210x140/8C49C9/white?text=Web+Update",
       "link": "/novinky/web-update"
     },
     {
@@ -29,7 +29,7 @@
       "title": "Cesta do Indie 2024",
       "date": "2024-02-20",
       "excerpt": "Plánujeme púť do Vrindávanu a Mayápuru. Prihláste sa čo najskôr, počet miest je obmedzený.",
-      "image": "/images/novinky/india-trip.jpg",
+      "image": "https://placehold.co/210x140/8C49C9/white?text=India+Trip",
       "link": "/novinky/india-trip-2024"
     },
     {
@@ -37,7 +37,7 @@
       "title": "Verejný kírtan v Bratislave",
       "date": "2024-02-15",
       "excerpt": "Pozývame vás na verejný kírtan v centre Bratislavy. Prídite si zaspievať mantr​y s nami.",
-      "image": "/images/novinky/kirtan.jpg",
+      "image": "https://placehold.co/210x140/8C49C9/white?text=Kirtan",
       "link": "/novinky/kirtan-event"
     }
   ]
