@@ -33,9 +33,9 @@
     --header-primary-700: #69349A;
     --header-text: #FFFFFF;
     --header-text-muted: #C9CAD1;
-    --header-bg: rgba(0, 0, 0, 0.15);
-    --header-bg-scrolled: rgba(0, 0, 0, 0.35);
-    --header-card-bg: rgba(0, 0, 0, 0.30);
+    --header-bg: rgba(0, 0, 0, 0);
+    --header-bg-scrolled: rgba(0, 0, 0, 0.10);
+    --header-card-bg: rgba(0, 0, 0, 0.20);
     --header-height-desktop: 72px;
     --header-height-mobile: 64px;
     --header-shadow-card: 0 8px 30px rgba(0, 0, 0, 0.35);
